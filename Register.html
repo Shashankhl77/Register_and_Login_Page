@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Neon&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
@@ -13,39 +14,54 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Login Form</title>
   </head>
-
   <body>
-    <div class="container mt-5">
-    <div class="card">
-      <div class="card-header"><h1>Login Form</h1></div>
-      <div class="card-body">
-        <form id="loginForm">
-          <div class="form-group">
-            <label for="loginUsername"class="mb-2">Username</label>
-            <input
-              type="text"
-              class="form-control"
-              id="loginUsername"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="loginPassword"class="mb-2">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="loginPassword"
-              required
-            />
-          </div>
-          <button type="submit" class="btn btn-primary mt-3 ">Login</button>
-        </form>
+    <div class="container mt-5 rounded-3">
+  
+      <div class="card mb-3">
+        <div class="card-header"><h1 class="text-center">Registration Form</h1></div>
+        <div class="card-body">
+          <form id="registrationForm">
+            <div class="form-group">
+              <label for="regUsername" class="mb-2">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="regUsername"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="regEmail"class="mb-2">Email address</label>
+              <input type="email" class="form-control" id="regEmail" required />
+            </div>
+            <div class="form-group">
+              <label for="regPassword"class="mb-2">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="regPassword"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="regConfirmPassword"class="mb-2">Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="regConfirmPassword"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mt-3" >Register</button>
+            <span class="m-3">Already have an account?<a href="index.html">Login</a></span>
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+
+     
+    
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

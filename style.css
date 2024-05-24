@@ -2,10 +2,16 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: #1b263b;
-  align-items: center;
+  background-color: #4361ee;
 }
 
 .container {
   max-width: 500px;
+}
+button {
+  width: 100%;
+}
+span {
+  position: relative;
+  top: 10px;
 }
