@@ -1,0 +1,11 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #1b263b;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+}
