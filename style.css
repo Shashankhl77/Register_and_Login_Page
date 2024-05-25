@@ -15,3 +15,8 @@ span {
   position: relative;
   top: 10px;
 }
+#togglePassword {
+  position: relative;
+  left: 440px;
+  bottom: 28px;
+}

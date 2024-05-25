@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       alert("Registration successful!");
       location.href = "Login.html";
-      // document.getElementById("registrationForm").reset();
+      document.getElementById("registrationForm").reset();
     });
 
   document
@@ -44,4 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Login successful!");
       document.getElementById("loginForm").reset();
     });
+});
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector(".pass");
+
+togglePassword.addEventListener("click", function (e) {
+  const type =
+    password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+  this.classList.toggle("fa-eye-slash");
 });

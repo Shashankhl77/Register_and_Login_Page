@@ -13,6 +13,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
     <title>Login Form</title>
   </head>
 
@@ -35,10 +37,10 @@
             <label for="loginPassword"class="mb-2">Password</label>
             <input
               type="password"
-              class="form-control"
+              class="pass form-control"
               id="loginPassword"
               required
-            />
+            /><i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
           </div>
           <button type="submit" class="btn btn-primary mt-3 ">Login</button>
           <span>Don't have an account?<a href="Register.html">SignUp</a></span>
